@@ -1,0 +1,435 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3, a{
+    font-family: "Fjalla One", sans-serif;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: rgb(224, 36, 36);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    )
+    ,url(imagenes/fondo.jpg);
+}
+
+.header__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 30px;
+}
+
+.logo__main > h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.menu__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu__main > a{
+    letter-spacing: .2rem;
+    color: rgb(255, 255, 255);
+}
+
+.menu__main > a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(218, 72, 72);
+}
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info{
+    background-color: rgb(218, 72, 72);
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.info > p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.main__section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: white;
+   
+}
+
+.main__info > p{
+    max-width: max-content;
+    margin-bottom: 10px;
+    outline: 2px dashed rgb(238, 56, 56);
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.main__info > h2{
+    font-size: 4rem;
+}
+
+.main__info > h3{
+    font-size: 2rem;
+}
+
+.image{
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+}
+
+.image > img{
+   width: 100%;
+}
+
+.image__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 100%;
+    background-color: rgb(196, 26, 26);
+    outline: 4px solid rgb(196, 26, 26);
+    border: 1px dashed white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.image__info > p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.main__card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__card > h3{
+    font-size: 2.8rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+}
+
+.card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.card > h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.card > p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.uno{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    )
+    ,url(imagenes/card2.jpg);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.dos{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    ),url(imagenes/card1.jpg);
+}
+
+.tres{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    ),url(imagenes/card3.jpg);
+}
+
+.cuarto{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    ),url(imagenes/card4.jpg);
+    background-position: bottom;
+    grid-column: span 2;
+}
+
+.tag{
+    background-color: rgb(196, 35, 35);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    max-width: max-content;
+}
+
+.article__main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.article__main > h3{
+    font-size: 2.8rem;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card__comida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.card__comida > img{
+    width: 80%;
+}
+
+.card__comida > h3{
+    font-size: 1.9rem;
+}
+
+.main_parrafo{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.ordenar{
+    padding: 10px 20px;
+    background-color: rgb(207, 39, 39);
+    border: none;
+    color: white;
+    font-family: "Fjalla One", sans-serif;
+    letter-spacing: 4px;
+}
+
+.actividades{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.329);
+    padding: 30px;
+}
+
+.info__acti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info__info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info__info p:first-child{
+    font-weight: bolder;
+    padding: 10px;
+    background-color: rgb(204, 47, 47);
+    max-width: max-content;
+    color: white;
+}
+
+.info__info p{
+    font-size: 0.8rem;
+    max-width: 400px;
+}
+
+.info__info > h3{
+    font-size: 2rem;
+}
+
+.info__image{
+    max-width: 300px;
+    padding: 10px;
+}
+
+.info__image img{
+    max-width: 100%;
+}
+
+.footer{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    )
+    ,url(imagenes/fondo.jpg);
+    color: white;
+}
+
+.footer > h3{
+    font-size: 2.8rem;
+}
+
+.footer__info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.info__footer > h3{
+    font-size: 2rem;
+}
+
+.menu__end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__end > a{
+    color: white;
+}
+
+.menu__end > a:hover{
+    color: rgb(214, 42, 42);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header__content{
+        display: none;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        grid-column: span 1;
+    }
+
+    .card > h3{
+        font-size: 1rem;
+    }
+
+    .card > p{
+        font-size: 0.6rem;
+    }
+
+    .info__acti{
+        justify-content: center;
+    }
+
+    .footer__info{
+        grid-template-columns: 1fr;
+    }
+}
